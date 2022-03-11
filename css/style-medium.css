@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+
+  h3 {
+    font-size: 90%;
+  }
+
+  /*=============================================
+  =                ACCOMMODATIONS                =
+  =============================================*/
+
+  /*----------  Cards  ----------*/
+
+  /* # cards full-list */
+
+  .full-list .card-container {
+    margin-top: 30px;
+  }
+
+  /* # cards it-list */
+
+  .it-list {
+    max-width: 400px;
+  }
+
+}

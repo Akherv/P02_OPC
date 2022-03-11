@@ -1,0 +1,268 @@
+/**
+ *
+ * SUMMARY
+ *
+ * # HEADER
+ * # MAIN
+ * # SEARCH
+ *    # search-bar
+ *    # search-filter
+ *    # search-informations
+ * # ACCOMMODATIONS
+ *    # full-list
+ *    # it-list
+ *    # cards
+ *        # cards full-list
+ *        # cards it-list
+ * # ACTIVITIES
+ * # FOOTER
+ *
+ */
+
+@media screen and (max-width: 768px) {
+
+  /*=============================================
+  =                 # HEADER                    =
+  =============================================*/
+
+  header {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    margin-top: 30px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .menu__tab {
+    width: 50%;
+    padding: 10px;
+    border-top: none;
+    border-bottom: 3px solid var(--couleur-principale);
+    text-align: center;
+  }
+
+  .menu:nth-child(2) {
+    margin-left: 0;
+  }
+
+  /*=============================================
+  =                   # MAIN                    =
+  =============================================*/
+
+  main {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  /*=============================================
+  =                   # SEARCH                  =
+  =============================================*/
+
+  #search {
+    padding: 0 6%;
+  }
+
+  /*----------  # search-bar  ----------*/
+
+  .search-bar {
+    min-width: unset;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  .search-bar__button {
+    width: 68px;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .search-bar__button-text {
+    display: none;
+  }
+
+  .fa-search {
+    display: block;
+  }
+
+  /*----------  # search-filter ----------*/
+
+  .search-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-filter ul {
+    margin-top: 20px;
+  }
+
+  .search-filter li {
+    margin: 10px 15px 10px 0;
+    padding-right: 15px;
+  }
+
+  .search-filter span:last-child {
+    margin-left: 45px;
+  }
+
+  /*----------  # search-informations ----------*/
+
+  .search-info .fa-stack {
+    margin: 10px 0 0 0;
+  }
+
+  .search-info:last-child {
+    font-size: 90%;
+  }
+
+  /*=============================================
+  =               # ACCOMMODATIONS              =
+  =============================================*/
+
+  #accommodations {
+    flex-direction: column-reverse;
+  }
+
+  .full-list,
+  .it-list {
+    max-width: unset;
+    max-height: unset;
+    margin: 0;
+    padding: 30px 6%;
+    border-radius: 0;
+  }
+
+  /* # full-list */
+
+  .full-list {
+    background-color: #ffffff;
+  }
+
+  .full-list__card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* # it-list */
+
+  .it-list .header-container {
+    flex-direction: row;
+  }
+
+
+  /*----------  # cards  ----------*/
+
+  .full-list .card,
+  .it-list .card {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* # cards full-list */
+
+  .full-list .card {
+    min-height: 190px;
+  }
+
+  .full-list .card__image {
+    height: 100px;
+  }
+
+  .full-list>p {
+    margin-top: 35px;
+  }
+
+  /* # cards it-list */
+
+  .it-list {
+    max-width: unset;
+  }
+
+  /*=============================================
+  =                  # ACTIVITIES               =
+  =============================================*/
+
+  #activities {
+    padding: 0 6%;
+    margin-top: 30px;
+  }
+
+  .card-activities {
+    max-width: 400px;
+  }
+
+  .activities__container {
+    margin-top: 20px;
+  }
+
+  .activities__bloc,
+  .activities__column {
+    min-width: 0;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .activities__bloc {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .activities__column {
+    width: 100%;
+  }
+
+  .card-activities {
+    height: 170px;
+    margin-top: 20px;
+  }
+
+  .card-activities .card__picture {
+    height: calc(100% - 50px);
+  }
+
+  .card-activities img {
+    height: 140%;
+  }
+
+  .card-activities .card__content {
+    padding: 15px;
+  }
+
+  /*=============================================
+  =                  # FOOTER                  =
+  =============================================*/
+
+  footer {
+    margin-top: 40px;
+    padding: 6%;
+  }
+
+  .container__footer {
+    flex-direction: column;
+  }
+
+  footer div:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  footer div {
+    margin-top: 10px;
+  }
+
+}
